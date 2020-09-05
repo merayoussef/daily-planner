@@ -35,8 +35,7 @@ $(document).ready(function() {
     }
 
     hourUpdate();
-
-    var interval = setInterval(hourUpdate, 15000);
+    
     // save to local storage based on description in text box and hour
     $("#nine .description").val(localStorage.getItem("nine"));
     $("#ten .description").val(localStorage.getItem("ten"));
