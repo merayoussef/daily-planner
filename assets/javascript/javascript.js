@@ -16,14 +16,13 @@ $(document).ready(function() {
 
     function hourUpdate() {
         var currentHour = moment().hours();
-
+        // hour color change depending on time if past, present or future
         $(".time-block").each(function(){
             var blockHour = parseInt($(this).attr("id").split
             ("-")[1]);
-
             if (blockHour < currentHour) {
                 $(this).addClass("past");
-            } else if (blockHour === currentHour) {
+            } else if (blockHour = currentHour) {
                 $(this).removeClass("past");
                 $(this).addClass("present");
             } else {
@@ -32,12 +31,13 @@ $(document).ready(function() {
                 $(this).addClass("future");
             }
         });
+        
     }
 
     hourUpdate();
 
     var interval = setInterval(hourUpdate, 15000);
-
+    // save to local storage based on description in text box and hour
     $("#nine .description").val(localStorage.getItem("nine"));
     $("#ten .description").val(localStorage.getItem("ten"));
     $("#eleven .description").val(localStorage.getItem("eleven"));
