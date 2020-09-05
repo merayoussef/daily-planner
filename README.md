@@ -1,5 +1,5 @@
 # Work Day Scheduler/ Daily Planner
-The purpose of this project is to create a calendar with work day hours to which events can be added to the calendar and saved to keep track of daily tasks. The calendar will have different colors when the added task has passed and when a future task is coming up. The calendar will also be storing the tasks put in so even if the page is refreshed the tasks added will remain.
+The purpose of this project is to create a calendar with work day hours to which events can be added to the calendar and saved to keep track of daily tasks. The calendar will have different colors based on time of day. Background color of each hour will change depending on if the hour has passed (gray), is current (red) or is coming up (green). The calendar will also be storing the tasks put in so even if the page is refreshed the tasks added will remain on page.
 
 
 # GitHub Repo:
